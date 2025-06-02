@@ -11,6 +11,9 @@
 		D96553CE2DDA458A00638958 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96553CD2DDA458A00638958 /* ContentView.swift */; };
 		D96553D02DDA458B00638958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96553CF2DDA458B00638958 /* Assets.xcassets */; };
 		D96553D32DDA458B00638958 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96553D22DDA458B00638958 /* Preview Assets.xcassets */; };
+		D9713B232DEDF86D0011DBFF /* FirstExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9713B222DEDF86D0011DBFF /* FirstExpenseView.swift */; };
+		D9713B262DEE02CC0011DBFF /* SimpleGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9713B252DEE02CC0011DBFF /* SimpleGridView.swift */; };
+		D9713B282DEE03700011DBFF /* LazyGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9713B272DEE03700011DBFF /* LazyGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		D96553CD2DDA458A00638958 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D96553CF2DDA458B00638958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D96553D22DDA458B00638958 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9713B222DEDF86D0011DBFF /* FirstExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstExpenseView.swift; sourceTree = "<group>"; };
+		D9713B252DEE02CC0011DBFF /* SimpleGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGridView.swift; sourceTree = "<group>"; };
+		D9713B272DEE03700011DBFF /* LazyGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,8 @@
 		D96553CA2DDA458A00638958 /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				D9713B242DEDFD4C0011DBFF /* DifferentGrid */,
+				D9713B212DEDF8480011DBFF /* TypeOfExpenses */,
 				D96553CB2DDA458A00638958 /* ExpenseTrackerApp.swift */,
 				D96553CD2DDA458A00638958 /* ContentView.swift */,
 				D96553CF2DDA458B00638958 /* Assets.xcassets */,
@@ -65,6 +73,23 @@
 				D96553D22DDA458B00638958 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D9713B212DEDF8480011DBFF /* TypeOfExpenses */ = {
+			isa = PBXGroup;
+			children = (
+				D9713B222DEDF86D0011DBFF /* FirstExpenseView.swift */,
+			);
+			path = TypeOfExpenses;
+			sourceTree = "<group>";
+		};
+		D9713B242DEDFD4C0011DBFF /* DifferentGrid */ = {
+			isa = PBXGroup;
+			children = (
+				D9713B252DEE02CC0011DBFF /* SimpleGridView.swift */,
+				D9713B272DEE03700011DBFF /* LazyGridView.swift */,
+			);
+			path = DifferentGrid;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +164,9 @@
 			files = (
 				D96553CE2DDA458A00638958 /* ContentView.swift in Sources */,
 				D96553CC2DDA458A00638958 /* ExpenseTrackerApp.swift in Sources */,
+				D9713B262DEE02CC0011DBFF /* SimpleGridView.swift in Sources */,
+				D9713B282DEE03700011DBFF /* LazyGridView.swift in Sources */,
+				D9713B232DEDF86D0011DBFF /* FirstExpenseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

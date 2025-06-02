@@ -12,6 +12,7 @@ struct ExpenseTrackerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            //LazyGridView()
         }
     }
 }
