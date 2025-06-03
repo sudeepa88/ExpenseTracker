@@ -14,6 +14,7 @@
 		D9713B232DEDF86D0011DBFF /* FirstExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9713B222DEDF86D0011DBFF /* FirstExpenseView.swift */; };
 		D9713B262DEE02CC0011DBFF /* SimpleGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9713B252DEE02CC0011DBFF /* SimpleGridView.swift */; };
 		D9713B282DEE03700011DBFF /* LazyGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9713B272DEE03700011DBFF /* LazyGridView.swift */; };
+		D9713B2B2DEF5E270011DBFF /* UPIExpenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9713B2A2DEF5E270011DBFF /* UPIExpenseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		D9713B222DEDF86D0011DBFF /* FirstExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstExpenseView.swift; sourceTree = "<group>"; };
 		D9713B252DEE02CC0011DBFF /* SimpleGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleGridView.swift; sourceTree = "<group>"; };
 		D9713B272DEE03700011DBFF /* LazyGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyGridView.swift; sourceTree = "<group>"; };
+		D9713B2A2DEF5E270011DBFF /* UPIExpenseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPIExpenseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		D96553CA2DDA458A00638958 /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				D9713B292DEF5E000011DBFF /* Models */,
 				D9713B242DEDFD4C0011DBFF /* DifferentGrid */,
 				D9713B212DEDF8480011DBFF /* TypeOfExpenses */,
 				D96553CB2DDA458A00638958 /* ExpenseTrackerApp.swift */,
@@ -90,6 +93,14 @@
 				D9713B272DEE03700011DBFF /* LazyGridView.swift */,
 			);
 			path = DifferentGrid;
+			sourceTree = "<group>";
+		};
+		D9713B292DEF5E000011DBFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9713B2A2DEF5E270011DBFF /* UPIExpenseModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 				D9713B262DEE02CC0011DBFF /* SimpleGridView.swift in Sources */,
 				D9713B282DEE03700011DBFF /* LazyGridView.swift in Sources */,
 				D9713B232DEDF86D0011DBFF /* FirstExpenseView.swift in Sources */,
+				D9713B2B2DEF5E270011DBFF /* UPIExpenseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

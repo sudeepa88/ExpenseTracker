@@ -8,11 +8,57 @@
 import SwiftUI
 
 struct FirstExpenseView: View {
+    
+    let upiExpenses:[UPIExpenseModel] = [
+        UPIExpenseModel(nameOfExpense: "Vehicle", amount: 60),
+        UPIExpenseModel(nameOfExpense: "Tea", amount: 12),
+        UPIExpenseModel(nameOfExpense: "Break Fast", amount: 20),
+        UPIExpenseModel(nameOfExpense: "Lunch", amount: 60),
+        UPIExpenseModel(nameOfExpense: "Tea", amount: 12),
+        UPIExpenseModel(nameOfExpense: "Auto", amount: 15),
+        UPIExpenseModel(nameOfExpense: "Tea", amount: 24),
+        UPIExpenseModel(nameOfExpense: "Mango", amount: 50),
+        UPIExpenseModel(nameOfExpense: "Dinner", amount: 50)
+    ]
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+        
+            
+                List{
+                    ForEach(0..<upiExpenses.count) { i in
+                        VStack {
+                            
+                            HStack{
+                                VStack{
+                                    Text("\(upiExpenses[i].nameOfExpense)")
+                                }
+                                Spacer()
+                                VStack{
+                                    Text("Rs. " + "\(upiExpenses[i].amount)")
+                                }
+                            }
+                            
+                        }.frame(height: 50)
+                    }
+                }
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar{
+                    ToolbarItem(placement: .principal) {
+                        
+                        Text("UPI Expense")
+                            .font(.largeTitle)
+                        
+                    }
+                }
+                
+        }
     }
 }
 
 #Preview {
     FirstExpenseView()
 }
+
+
