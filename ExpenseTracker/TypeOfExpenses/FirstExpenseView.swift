@@ -22,43 +22,86 @@ struct FirstExpenseView: View {
     ]
     
     
+    @State private var totalExpense: Int = 0
+    
+    
     var body: some View {
         NavigationStack {
-        
-            
-                List{
-                    ForEach(0..<upiExpenses.count) { i in
-                        VStack {
-                            
-                            HStack{
-                                VStack{
-                                    Text("\(upiExpenses[i].nameOfExpense)")
-                                }
-                                Spacer()
-                                VStack{
-                                    Text("Rs. " + "\(upiExpenses[i].amount)")
-                                }
+            List{
+                
+                ForEach(0..<upiExpenses.count ) { i in
+                    VStack {
+                        
+                        HStack{
+                            VStack{
+                                Text("\(upiExpenses[i].nameOfExpense)")
                             }
-                            
-                        }.frame(height: 50)
-                    }
-                }
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar{
-                    ToolbarItem(placement: .principal) {
+                            Spacer()
+                            VStack{
+                                Text("Rs. " + "\(upiExpenses[i].amount)")
+                            }
+                        }
                         
-                        Text("UPI Expense")
-                            .font(.largeTitle)
-                        
-                    }
+                    }.frame(height: 50)
                 }
                 
-        }
+                Spacer()
+                VStack {
+                    HStack {
+                        Text("Total Expense: ")
+                        Spacer()
+                        Text("Rs: " + "\(totalExpense)")
+                    }.fontWeight(.heavy)
+                        .font(.system(.subheadline))
+                }
+                
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar{
+                ToolbarItem(placement: .principal) {
+                    
+                    Text("UPI Expense")
+                        .font(.largeTitle)
+                    
+                }
+            }
+            .onAppear {
+                var total = 0
+                for expense in upiExpenses {
+                    total += Int(expense.amount)
+                }
+                totalExpense = total
+            }
+            
+            HStack{
+                Button("Submit"){
+                    print("Button Tapped !")
+                }.padding(.trailing, 40)
+                    .padding(.leading, 40)
+                    .padding(.top, 20)
+                    .padding(.bottom,20)
+                    .background(Color.yellow)
+                    .foregroundColor(Color.white)
+                    .cornerRadius(20)
+            }
+            .background(Color.blue)
+            .padding(.bottom,23)
+            
+
+            
+        }//Navigation Stack ending
+        .ignoresSafeArea(.all, edges: [.bottom, .leading, .trailing])
+        
+
     }
 }
 
 #Preview {
     FirstExpenseView()
 }
+
+
+
+
 
 
